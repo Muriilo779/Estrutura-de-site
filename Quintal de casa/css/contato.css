@@ -1,0 +1,36 @@
+.mapa {
+  margin: 8rem 0 2rem 0;
+}
+.container-contato-texto {
+  justify-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+}
+.contato-texto {
+  width: 30%;
+  display: flex;
+  flex-flow: column wrap;
+}
+.contato-botoes {
+  width: 50%;
+}
+.contato-botoes input {
+  border: 1px solid grey;
+  background: #fff;
+   width: 90%;
+   padding: 1em 1em;
+   margin: 0 0 2em 0
+ }
+textarea {
+  height: 100px;
+  border: 1px solid grey;
+  width: 90%;
+  padding: 1em 1em;
+  margin: 0 0 1em 0;
+ }
+.botao button {
+  border: 1px solid grey;
+  background: white;
+  padding: 0.5em 4em;
+  margin: 0.5em 0 2em 0;
+ }

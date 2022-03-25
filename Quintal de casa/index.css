@@ -1,0 +1,105 @@
+* {
+}
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.75rem;
+  --fs-body: 1rem;
+}
+
+@media (min-width: 800px) {
+  :root {
+  --fs-h1: 3.5rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.5rem;
+  --fs-body: 1.125rem;
+  }
+}
+
+/*------------------------------ estilos gerais -----------------------------*/
+h1 {font-size: var(--fs-h1) }
+h2 {font-size: var(--fs-h2) }
+h3 {font-size: var(--fs-h3) }
+p  {font-size: var(--fs-body)}
+/*--------------------------css-pagina principal---------------------*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.cabecario {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+}
+.lista-cabecario li {
+  line-height: 1.4em;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 8px;
+  font-size: var(--fs-body);
+}
+body {
+  background: #faf8f6;
+  margin: 0;
+}
+.intro {
+  margin: 0 0 0 0rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo {
+  margin: 8rem 0 0;
+  font-weight: normal;
+}
+.subtitulo {
+  font-weight: normal;
+}
+.container-descricao {
+  margin: 6rem 0 4rem 0 ;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+}
+.descricao {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  font-weight: normal;
+}
+.descricao h3 {
+  padding: 0 1rem 0 1rem;
+}
+.explicacao {
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+.explicacao-texto {
+  margin: 1rem 2rem;
+  width: 50%;
+  display: inline-block;
+}
+.imagens-principal {
+  margin: 4rem 0 3rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+.imagens-principal img {
+  padding: 2rem 1rem;
+}
+footer {
+  color: #faf8f6;
+  background-color: #121212;
+  padding: 3rem 1rem;
+}
+footer .facebook {
+  font-size: 2rem;
+}

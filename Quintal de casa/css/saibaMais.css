@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+.container-saibaMais {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.texto-saibaMais {
+  margin: 5rem;
+  max-width: 30%;
+  border-top: 1px solid black;
+}
+.imagensfilho {
+  display: flex;
+  max-width: 400px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  margin: 2rem;
+}
