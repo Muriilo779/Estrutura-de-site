@@ -1,22 +1,66 @@
-* {
-  box-sizing: border-box;
+
+/*--------------------------css-pagina principal---------------------*/
+.container-saibaMais 
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
-.container-saibaMais {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+
+.subtitulo
+{
+    margin-bottom: 1rem;
 }
-.texto-saibaMais {
-  margin: 5rem;
-  max-width: 30%;
-  border-top: 1px solid black;
+
+.texto-saibaMais 
+{
+    margin: 10rem;
+    max-width: 30%;
 }
-.imagensfilho {
-  display: flex;
-  max-width: 400px;
-  max-height: 500px;
-  width: auto;
-  height: auto;
-  flex-direction: column;
-  margin: 2rem;
+
+.imagensfilho 
+{
+    display: flex;
+    width: 80%;
+    margin: 2rem;
+}
+
+.imagens-saibaMais
+{
+    width: 30%;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.humildade
+{
+    font-size: 0.5rem;
+    color:dimgrey;
+}
+
+/*---------------------------Para telas de celulares---------------------------*/
+@media screen and (max-width: 1020px)
+{
+    .imagens-saibaMais
+    {
+        display: none;
+    }
+
+    .texto-saibaMais
+    {
+        margin: 0;
+        margin-top: 8rem;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .container-saibaMais 
+    {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
 }

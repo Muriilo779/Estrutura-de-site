@@ -1,0 +1,107 @@
+a 
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.cabecario 
+{
+    width: 100%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 3;
+}
+
+.lista-cabecario nav ul 
+{
+    display: flex;
+}
+
+.lista-cabecario li 
+{
+    line-height: 1.4em;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 8px;
+    font-size: var(--fs-body);
+}
+
+footer
+{
+    color: #faf8f6;
+    background-color: #121212;
+    padding: 3rem 1rem;
+}
+
+@media screen and (max-width: 1020px)
+{
+    /*cabecario*/
+    .cabecario
+    {
+        background: #faf8f6;
+    }
+
+    .lista-cabecario
+    {
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*resetando padding, margen, etc*/
+    nav
+    {
+        width:100%;
+    }
+
+    ul
+    {
+        padding:0;
+    }
+
+    li a
+    {
+        color: #343434;
+        font-size: 1.5rem;
+    }
+
+    /*Organizando os elementos do cabecario*/
+    .quintal-casa
+    {
+        display:flex;
+        justify-content: center;
+    }
+
+    .cabecario-resto
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*fundo*/
+    footer
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+    footer .icones
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    .icones
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icones a
+    {
+        margin: 1rem;
+    }
+}

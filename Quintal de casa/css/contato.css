@@ -1,36 +1,66 @@
-.mapa {
-  margin: 8rem 0 2rem 0;
+body
+{
+    margin:0;
+    background-color:#faf8f6;
 }
-.container-contato-texto {
-  justify-content: space-around;
-  display: flex;
-  flex-flow: row wrap;
+
+.mapa 
+{
+    margin: 8rem 0 2rem 0;
 }
-.contato-texto {
-  width: 30%;
-  display: flex;
-  flex-flow: column wrap;
+
+.container-contato 
+{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    margin-left: 10%;
 }
-.contato-botoes {
-  width: 50%;
+
+.contato-titulo
+{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
-.contato-botoes input {
-  border: 1px solid grey;
-  background: #fff;
-   width: 90%;
-   padding: 1em 1em;
-   margin: 0 0 2em 0
- }
-textarea {
-  height: 100px;
-  border: 1px solid grey;
-  width: 90%;
-  padding: 1em 1em;
-  margin: 0 0 1em 0;
- }
-.botao button {
-  border: 1px solid grey;
-  background: white;
-  padding: 0.5em 4em;
-  margin: 0.5em 0 2em 0;
- }
+
+.contato-texto 
+{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.contato-icones
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+ @media screen and (max-width: 1020px)
+{
+    .container-contato
+    {
+        width: auto;
+        margin: 0 1rem;
+    }
+
+    .contato-titulo
+    {
+        text-align: center;
+    }
+
+    .contato-texto {
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        margin:0;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .contato-icones
+    {
+        display: none;
+    }
+}

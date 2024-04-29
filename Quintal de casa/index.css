@@ -1,105 +1,230 @@
-* {
-}
-*::after {
-  box-sizing: border-box;
-}
-:root {
-  --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
-  --fs-h3: 1.75rem;
-  --fs-body: 1rem;
+*::after 
+{
+    box-sizing: border-box;
 }
 
-@media (min-width: 800px) {
-  :root {
-  --fs-h1: 3.5rem;
-  --fs-h2: 2.25rem;
-  --fs-h3: 1.5rem;
-  --fs-body: 1.125rem;
-  }
+@media screen and (min-width: 1021px) {
+    :root {
+        --fs-h1: 7.5rem;
+        --fs-h2: 4.25rem;
+        --fs-h3: 2.75rem;
+        --fs-body: 1.5rem;
+    }
 }
 
 /*------------------------------ estilos gerais -----------------------------*/
-h1 {font-size: var(--fs-h1) }
-h2 {font-size: var(--fs-h2) }
-h3 {font-size: var(--fs-h3) }
-p  {font-size: var(--fs-body)}
-/*--------------------------css-pagina principal---------------------*/
-a {
-  text-decoration: none;
-  color: inherit;
+h1 
+{
+    font-size: var(--fs-h1);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight:700;
+    letter-spacing: -10px;
 }
-.cabecario {
-  width: 100%;
-  top: 0;
-  position: fixed;
-  display: flex;
-  justify-content: flex-end;
-}
-.lista-cabecario li {
-  line-height: 1.4em;
-  display: inline-block;
-  text-decoration: none;
-  padding: 12px 8px;
-  font-size: var(--fs-body);
-}
-body {
-  background: #faf8f6;
-  margin: 0;
-}
-.intro {
-  margin: 0 0 0 0rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-.titulo {
-  margin: 8rem 0 0;
-  font-weight: normal;
-}
-.subtitulo {
-  font-weight: normal;
-}
-.container-descricao {
-  margin: 6rem 0 4rem 0 ;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
 
+h2 
+{
+    font-size: var(--fs-h2);
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: -1.5px;
+    line-height: 0.9;
+    letter-spacing: -3px;
+    margin: 0;
 }
-.descricao {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  font-weight: normal;
+
+h3 
+{
+    font-size: var(--fs-h3);
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+    letter-spacing: -1.5px;
 }
-.descricao h3 {
-  padding: 0 1rem 0 1rem;
+
+p  
+{
+    font-size: var(--fs-body);
+    font-family: "PT Serif", serif;
+    line-height: 46px;
+    margin: 0;
 }
-.explicacao {
-  margin: 2rem 0;
-  display: flex;
-  flex-flow: row wrap;
+
+/*--------------------------css-pagina principal---------------------*/
+body 
+{
+    background: #faf8f6;
+    margin: 0;
 }
-.explicacao-texto {
-  margin: 1rem 2rem;
-  width: 50%;
-  display: inline-block;
+
+.intro 
+{
+    margin: 0 0 0 0rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
+.titulo 
+{
+    margin: 8rem 0 0;
+    font-weight: normal;
+}
+
+.container-descricao 
+{
+    margin: 3rem 0 8rem 0 ;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.descricao 
+{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    margin: 0.5rem;
+    align-items: center;
+    font-weight: normal;
+}
+
+.descricao h3 
+{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.explicacao 
+{
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.explicacao-imagem
+{
+    max-width: 30%;
+}
+.explicacao-texto 
+{
+    margin: 1rem 2rem;
+    width: 40%;
+    display: inline-block;
+}
+
+.explicacao-subtitulo
+{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
 .imagens-principal {
-  margin: 4rem 0 3rem 0;
-  display: flex;
-  justify-content: space-around;
+    margin: 4rem 0 3rem 0;
+    display: flex;
+    justify-content: space-around;
 }
+
 .imagens-principal img {
-  padding: 2rem 1rem;
+    padding: 2rem 1rem;
+    max-width: 600px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
 }
-footer {
-  color: #faf8f6;
-  background-color: #121212;
-  padding: 3rem 1rem;
-}
-footer .facebook {
-  font-size: 2rem;
+
+/*---------------------------Para telas de celulares---------------------------*/
+@media screen and (max-width: 1020px)
+{
+    /*Tamanho das fontes*/
+    :root 
+    {
+        --fs-h1: 2.75rem;
+        --fs-h2: 2rem;
+        --fs-h3: 1.75rem;
+        --fs-body: 1.25rem;
+    }
+
+    /*------------------------------ estilos gerais -----------------------------*/
+    h1 
+    {
+        font-size: var(--fs-h1);
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 700;
+        letter-spacing: -3px;
+    }
+
+    h2 
+    {
+        font-size: var(--fs-h2);
+        font-family: "Josefin Sans", sans-serif;
+        letter-spacing: -1.5px;
+        line-height: 0.9;
+        letter-spacing: -1.5px;
+        margin: 0;
+    }
+
+    h3 
+    {
+        font-size: var(--fs-h3);
+        font-family: "Josefin Sans", sans-serif;
+        margin: 0;
+        letter-spacing: -1px;
+    }
+
+    p  
+    {
+        font-size: var(--fs-body);
+        font-family: "PT Serif", serif;
+        line-height: 46px;
+        margin: 0;
+    } 
+
+    /*Deixando as imagens e os textos ocuparem 100% do espaço e centralizando eles*/
+    .imagem-titulo
+    {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .container-descricao
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .explicacao-imagem
+    {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .explicacao-texto
+    {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .imagens-principal
+    {
+        margin: 0;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .imagens-principal img
+    {
+        width: 100%;
+        padding-left: 0;
+        padding-right:0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 }
